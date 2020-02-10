@@ -30,38 +30,12 @@ multichain-cli primechain grant 1aMiTQjLXABeoKtVgBcr5zzVXtT1eRvRTfY3RJ connect,s
 
 GRANT PERMISSION FROM THE PRIMECHAIN MASTER NODE AND TYPE yes TO CONTINUE...
 ```
-***Mining node***   
-For setting up a mining node, execute the following command on the PRIMECHAIN MASTER NODE:
-```
-cd primechain_nodes/
-sudo bash -e grant_permissions_mining_node.sh <primechain_address>
-```
 
-***Issuer node***   
-For setting up an issuer node (it has send, receive, issue, connect, create permissions), execute the following command on the PRIMECHAIN MASTER NODE:
+Login to the Primechain Master Seed Node:
 ```
-cd primechain_nodes/
-sudo bash -e grant_permissions_issuer_node.sh <primechain_address>
-```
-
-***Non-issuer node***   
-For setting up a non-issuer node (it has send, receive, connect, create permissions), execute the following command on the PRIMECHAIN MASTER NODE:
-```
-cd primechain_nodes/
-sudo bash -e grant_permissions_non_issuer_node.sh <primechain_address>
-```
-
-***Regulator node***   
-For setting up a non-issuer node (it has send, receive, connect permissions), execute the following command on the PRIMECHAIN MASTER NODE:
-```
-cd primechain_nodes/
-sudo bash -e grant_permissions_regulator_node.sh <primechain_address>
-```
-***Operator node***   
-For setting up an operator node (it has send, receive, issue, connect, create, admin, activate, mine permissions), execute the following command on the PRIMECHAIN MASTER NODE:
-```
-cd primechain_nodes1/
-sudo bash -e grant_permissions_operator_node.sh <primechain_address>
+su primechain-user
+cd ~
+multichain-cli primechain grant 1aMiTQjLXABeoKtVgBcr5zzVXtT1eRvRTfY3RJ connect
 ```
 
 After this, you will see: 
