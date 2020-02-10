@@ -12,14 +12,14 @@ This hardens the operating system, sets up multichain on the server and connects
 
 E.g. ```sudo bash -e primechain_nodes_setup.sh 52.172.139.41```
 
-This hardens the operating system, sets up multichain on the server and connects to the permissioned blockchain instance on the SEED NODE. After some time, you will something like the following:
+This hardens the operating system, sets up multichain on the server and connects to the permissioned blockchain instance on the PRIMECHAIN MASTER NODE. After some time, you will something like the following:
 
 ```
 -------------------------------------------
 INITIATING CONNECTION TO BLOCKCHAIN.....
 -------------------------------------------
 
-MultiChain 1.0.6 Daemon (latest protocol 10011)
+MultiChain 2.0.3 Daemon (latest protocol 20011)
 
 Starting up node...
 
@@ -30,40 +30,40 @@ Please ask blockchain admin or user having activate permission to let you connec
 multichain-cli primechain grant 1aMiTQjLXABeoKtVgBcr5zzVXtT1eRvRTfY3RJ connect
 multichain-cli primechain grant 1aMiTQjLXABeoKtVgBcr5zzVXtT1eRvRTfY3RJ connect,send,receive
 
-GRANT PERMISSION FROM THE SEED NODE AND TYPE yes TO CONTINUE...
+GRANT PERMISSION FROM THE PRIMECHAIN MASTER NODE AND TYPE yes TO CONTINUE...
 ```
 ***Mining node***   
-For setting up a mining node, execute the following command on the SEED NODE:
+For setting up a mining node, execute the following command on the PRIMECHAIN MASTER NODE:
 ```
-cd primechain-api-setup/
-sudo bash -e grant_permissions_mining_node.sh <blockchain_address>
+cd primechain_nodes/
+sudo bash -e grant_permissions_mining_node.sh <primechain_address>
 ```
 
 ***Issuer node***   
-For setting up an issuer node (it has send, receive, issue, connect, create permissions), execute the following command on the SEED NODE:
+For setting up an issuer node (it has send, receive, issue, connect, create permissions), execute the following command on the PRIMECHAIN MASTER NODE:
 ```
-cd primechain-api-setup/
-sudo bash -e grant_permissions_issuer_node.sh <blockchain_address>
+cd primechain_nodes/
+sudo bash -e grant_permissions_issuer_node.sh <primechain_address>
 ```
 
 ***Non-issuer node***   
-For setting up a non-issuer node (it has send, receive, connect, create permissions), execute the following command on the SEED NODE:
+For setting up a non-issuer node (it has send, receive, connect, create permissions), execute the following command on the PRIMECHAIN MASTER NODE:
 ```
-cd primechain-api-setup/
-sudo bash -e grant_permissions_non_issuer_node.sh <blockchain_address>
+cd primechain_nodes/
+sudo bash -e grant_permissions_non_issuer_node.sh <primechain_address>
 ```
 
 ***Regulator node***   
-For setting up a non-issuer node (it has send, receive, connect permissions), execute the following command on the SEED NODE:
+For setting up a non-issuer node (it has send, receive, connect permissions), execute the following command on the PRIMECHAIN MASTER NODE:
 ```
-cd primechain-api-setup/
-sudo bash -e grant_permissions_regulator_node.sh <blockchain_address>
+cd primechain_nodes/
+sudo bash -e grant_permissions_regulator_node.sh <primechain_address>
 ```
 ***Operator node***   
-For setting up an operator node (it has send, receive, issue, connect, create, admin, activate, mine permissions), execute the following command on the SEED NODE:
+For setting up an operator node (it has send, receive, issue, connect, create, admin, activate, mine permissions), execute the following command on the PRIMECHAIN MASTER NODE:
 ```
-cd primechain-api-setup/
-sudo bash -e grant_permissions_operator_node.sh <blockchain_address>
+cd primechain_nodes1/
+sudo bash -e grant_permissions_operator_node.sh <primechain_address>
 ```
 
 After this, you will see: 
