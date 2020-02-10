@@ -111,7 +111,6 @@ echo '----------------------------------------'
 
 su -l $linux_admin_user -c 'multichaind '$chainname'@'$seed_node_ip':'$networkport' -daemon -datadir='$datadir''
 
-echo "su -l "$linux_admin_user" -c 'multichaind "$chainname"@"$seed_node_ip":"$networkport" -daemon -datadir="$datadir"'" >> $startup_script_full_path
 
 echo ''
 echo ''
