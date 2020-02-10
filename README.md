@@ -1,6 +1,4 @@
-# Primechain nodes
-
-## 1. Setting up other nodes 
+# Setting up Primechain nodes
 
 Login to server as a sudo or root user.
 ```
