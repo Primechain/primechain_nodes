@@ -37,8 +37,9 @@ su primechain-user
 cd ~
 multichain-cli primechain grant 1aMiTQjLXABeoKtVgBcr5zzVXtT1eRvRTfY3RJ connect
 ```
+Note: Don't forget to use the correct address in "multichain-cli primechain grant" above.
 
-After this, you will see: 
+After this, you will see a transaction ID like `fae186b309cf396f3a5e0f8dddbdb7d9ab4dd8bd08c69d5b044be19f030f4fc7`
 ```
 ----------PERMISSIONS GRANTED----------
 ```
@@ -49,10 +50,10 @@ Few seconds later, you will see something like this:
 BLOCKCHAIN SUCCESSFULLY SET UP!
 ----------------------------------------
 --------------------------------------------
-API CREDENTIALS
+PRIMECHAIN NODE CREDENTIALS
 --------------------------------------------
-rpcuser=********
-rpcpassword=******
+rpcuser=Tzt5COtBS9jeADGOlwMRj9akTyWlCgkZDcqgkQZc
+rpcpassword=fzQQMIMJa1mKlDfghQPBQ0uYxgmqdLaYHqjYtTxe
 
 ========================================
 SET UP COMPLETED SUCCESSFULLY!
